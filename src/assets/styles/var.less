@@ -1,0 +1,77 @@
+/********* 颜色 *********/
+@blue: #2a6bfd;
+@white: #fff;
+@red: #e92b2b;
+@2c2c2c: #2c2c2c;
+@7d7d7d: #7d7d7d;
+@666: #666;
+@yellow: #ff9900;
+@black: #000;
+@requiredRed: #fa5050;
+@orange: #FF7018;
+@grey: grey;
+@titleBlue: #00AA91;
+@blueHover: #3f7afd;
+/********* 字体 *********/
+@font-size-base           : 14px;
+@font-size-small          : 12px;
+@font-size-main-title     : @font-size-base + 12px;
+@font-size-data           : @font-size-base + 10px;
+@font-size-section-title  : @font-size-base + 2px;
+@font-size-table-title    : @font-size-base + 1px;
+
+
+/********* 屏幕宽度 *********/
+@screen-width:   1440px;
+
+/********* 左侧菜单 *********/
+@sideBarWidth:  266px;
+@collapseSideBarWidth: 54px;
+@menuBg:#ffffff;
+@sidebarTitle: #515a6e;
+
+/********* 顶部导航Navbar *********/
+@navMenu: #005BAC;
+@navMenuActive: #003076;
+@navFontColor: #ffffff;
+
+
+/********* 圆角定义函数 *************/
+.border-radius(@radius: 5px) {
+  border-radius: @radius;
+  -o-border-radius: @radius;
+  -ms-border-radius: @radius;
+  -moz-border-radius: @radius;
+  -webkit-border-radius: @radius;
+}
+
+/********* 字体宽度 *********/
+.font-size(@fontsize: 14px) {
+  font-size: @fontsize;
+}
+
+/********* 外边距 *********/
+.margin-side(@side, @range) {
+  margin-@{side}: @range;
+}
+
+/********* 内边距 *********/
+.padding-side(@side, @range) {
+  padding-@{side}: @range;
+}
+
+/********* 宽高 *********/
+.height(@height) {
+  height: @height;
+}
+
+.width(@width) {
+  width: @width;
+}
+.clearfix() {
+  &:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+}
